@@ -677,7 +677,7 @@ async function fetchServerStatus(){
     const players = data.players ?? data.player ?? null;
     const max = data.max_players ?? data.maxplayer ?? data.max ?? null;
     const version = data.version ?? data.mcversion ?? cfg.version;
-    document.getElementById('players-count').textContent = players!==null ? `${players} / ${max||'2025'}` : '2025';
+    document.getElementById('players-count').textContent = players!==null ? `${players} / ${max||'2026'}` : '2026';
     document.getElementById('server-version').textContent = version;
   }catch(e){
     console.warn('fetch failed', e);
