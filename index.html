@@ -44,7 +44,7 @@
 }
 </script>
 
-<link rel="icon" href="https://i.imgur.com/qPAKQOC.jpeg" type="image/png">
+<link rel="icon" href="https://i.imgur.com/cxDINLy.jpeg" type="image/png">
 
 <!-- Tailwind CSS -->
 <script src="https://cdn.tailwindcss.com"></script>
@@ -53,10 +53,10 @@ tailwind.config = {
   theme: {
     extend: {
       colors: {
-        realityRed: '#FF3D00',
-        realityOrange: '#FF9100',
-        realityYellow: '#FFC400',
-        realityGray: '#1a1a1a',
+        realityRed: '#7C3AED',
+        realityOrange: '#A855F7',
+        realityYellow: '#C084FC',
+        realityGray: '#0a0014',
         realityText: '#f3f4f6'
       },
       fontFamily: {
@@ -72,13 +72,13 @@ tailwind.config = {
 
 <style>
 /* =========================================================
-   REALITYMC — PREMIUM NEON ORANGE FIRE UI
+   REALITYMC — PREMIUM NEON PURPLE UI
    ========================================================= */
 
 /* ===== BASE ===== */
 body {
   font-family: Inter, sans-serif;
-  background: radial-gradient(circle at top, #1a0000 0%, #080000 70%, #050000 100%);
+  background: radial-gradient(circle at top, #120018 0%, #080010 70%, #050008 100%);
   color: #f3f4f6;
   scroll-behavior: smooth;
 }
@@ -91,24 +91,24 @@ body::before {
   pointer-events: none;
 }
 
-/* ===== GLOBAL FIRE GLOW ===== */
+/* ===== GLOBAL PURPLE GLOW ===== */
 :root {
-  --fire1: #FF3D00;
-  --fire2: #FF9100;
-  --fire3: #FFC400;
+  --fire1: #7C3AED;
+  --fire2: #A855F7;
+  --fire3: #C084FC;
 }
 
 .fire-text {
   background: linear-gradient(90deg, var(--fire1), var(--fire2), var(--fire3));
   -webkit-background-clip: text;
   color: transparent;
-  text-shadow: 0 0 18px rgba(255,150,0,0.7);
+  text-shadow: 0 0 18px rgba(180,120,255,0.7);
 }
 
 .glow-text {
   text-shadow:
-    0 0 2px rgba(255,120,0,.4),
-    0 0 6px rgba(255,100,0,.25);
+    0 0 2px rgba(200,150,255,.4),
+    0 0 6px rgba(180,120,255,.25);
 }
 
 /* REAL TEXT GRADIENT WITHOUT BLUR */
@@ -116,7 +116,7 @@ body::before {
   background: linear-gradient(90deg, var(--fire1), var(--fire2), var(--fire3));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  text-shadow: none; /* biar tidak blur */
+  text-shadow: none;
 }
 
 /* Optional: soft glow */
@@ -124,33 +124,33 @@ body::before {
   background: linear-gradient(90deg, var(--fire1), var(--fire2), var(--fire3));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  text-shadow: 0 0 8px rgba(255,140,0,0.45);
+  text-shadow: 0 0 8px rgba(200,150,255,0.45);
 }
 
 /* ===== HERO TITLE SUPER GLOW ===== */
 .hero-title {
   text-shadow:
-    0 0 20px rgba(255,140,0,0.9),
-    0 0 50px rgba(255,120,0,0.7),
-    0 0 90px rgba(255,100,0,0.6);
+    0 0 20px rgba(180,120,255,0.9),
+    0 0 50px rgba(160,90,255,0.7),
+    0 0 90px rgba(140,70,255,0.6);
 }
 
 /* ===== GLASS PANEL PREMIUM ===== */
 .glass {
   background: rgba(255,255,255,0.06);
-  border: 1px solid rgba(255,150,0,0.25);
+  border: 1px solid rgba(180,120,255,0.25);
   backdrop-filter: blur(18px);
   border-radius: 1.2rem;
   transition: .35s ease-in-out;
   position: relative;
   overflow: hidden;
-  box-shadow: 0 0 22px rgba(255,120,0,0.18);
+  box-shadow: 0 0 22px rgba(160,90,255,0.18);
 }
 
 .glass:hover {
   transform: translateY(-6px);
   background: rgba(255,255,255,0.09);
-  box-shadow: 0 0 40px rgba(255,150,0,0.38);
+  box-shadow: 0 0 40px rgba(180,120,255,0.38);
 }
 
 /* Light Sweep */
@@ -175,28 +175,28 @@ body::before {
 }
 .btn-glow:hover {
   transform: translateY(-3px);
-  box-shadow: 0 0 28px rgba(255,150,0,0.6);
+  box-shadow: 0 0 28px rgba(180,120,255,0.6);
 }
 
 .btn-fire {
   background: linear-gradient(90deg, var(--fire1), var(--fire2), var(--fire3));
-  box-shadow: 0 0 20px rgba(255,120,0,.55);
+  box-shadow: 0 0 20px rgba(160,90,255,.55);
 }
 .btn-fire:hover {
-  box-shadow: 0 0 40px rgba(255,145,0,.9);
+  box-shadow: 0 0 40px rgba(200,150,255,.9);
 }
 
 /* ===== FIRE BORDER CARDS ===== */
 .fire-card {
-  border: 1px solid rgba(255,150,0,0.3);
+  border: 1px solid rgba(180,120,255,0.3);
   background: rgba(0,0,0,.5);
   border-radius: 1rem;
   padding: 1.4rem;
   transition: .3s ease;
 }
 .fire-card:hover {
-  border-color: rgba(255,170,0,0.9);
-  box-shadow: 0 0 35px rgba(255,150,0,0.38);
+  border-color: rgba(200,150,255,0.9);
+  box-shadow: 0 0 35px rgba(180,120,255,0.38);
 }
 
 /* ===== CONNECT SECTION SPECIAL ===== */
@@ -204,17 +204,17 @@ body::before {
   position: relative;
   overflow:hidden;
   background: rgba(255,255,255,0.06);
-  border: 1px solid rgba(255,145,0,0.25);
+  border: 1px solid rgba(180,120,255,0.25);
   border-radius: 1.2rem;
   backdrop-filter: blur(20px);
   transition: .35s ease-in-out;
-  box-shadow: 0 0 28px rgba(255,130,0,0.25);
+  box-shadow: 0 0 28px rgba(160,90,255,0.25);
 }
 
 .connect-card:hover {
   transform: translateY(-6px);
   background: rgba(255,255,255,0.1);
-  box-shadow: 0 0 50px rgba(255,150,0,0.5);
+  box-shadow: 0 0 50px rgba(180,120,255,0.5);
 }
 
 .connect-card::before {
@@ -232,18 +232,18 @@ body::before {
   left:140%;
 }
 
-/* ===== NAV FIRE HOVER ===== */
+/* ===== NAV HOVER ===== */
 header nav a:hover {
   background: linear-gradient(90deg, var(--fire1), var(--fire2), var(--fire3));
   -webkit-background-clip: text;
   color: transparent;
-  text-shadow: 0 0 12px rgba(255,140,0,0.7);
+  text-shadow: 0 0 12px rgba(180,120,255,0.7);
 }
 
 /* ===== FOOTER HOVER ===== */
 footer a:hover {
   color: var(--fire3);
-  text-shadow: 0 0 12px rgba(255,150,0,.7);
+  text-shadow: 0 0 12px rgba(180,120,255,.7);
 }
 
 /* ===== ANIMATIONS ===== */
@@ -255,6 +255,24 @@ footer a:hover {
   from { opacity:0; transform:translateY(14px); }
   to   { opacity:1; transform:translateY(0); }
 }
+
+/* ===== RANK COLORS ===== */
+.rank-vip { color: #00fb0a; }
+.rank-mvp { color: #0818FB; }
+.rank-elite { color: #FBA608; }
+.rank-legend { color: #e813fb; }
+.rank-sultan { color: #fbf100; }
+.rank-supreme { color: #fb0000; }
+
+/* ===== COIN SHOP STYLES ===== */
+.coin-card {
+  background: linear-gradient(135deg, rgba(180,120,255,0.1) 0%, rgba(160,90,255,0.1) 100%);
+  border: 1px solid rgba(180,120,255,0.3);
+}
+.coin-card:hover {
+  border-color: rgba(200,150,255,0.8);
+  box-shadow: 0 0 40px rgba(180,120,255,0.3);
+}
 </style>
 
 
@@ -265,7 +283,7 @@ footer a:hover {
 <header class="w-full sticky top-0 z-50 bg-black/50 backdrop-blur-lg shadow-md fade-in">
   <div class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
     <a href="#home" class="flex items-center gap-3">
-      <img id="logo-img" src="https://i.imgur.com/qPAKQOC.jpeg" alt="MineSteal SMP" class="w-12 h-12 rounded-md shadow-lg">
+      <img id="logo-img" src="https://i.imgur.com/cxDINLy.jpeg" alt="MineSteal SMP" class="w-12 h-12 rounded-md shadow-lg">
       <div>
         <h1 class="text-xl font-heading text-white glow-text">MineSteal SMP</h1>
         <p class="text-xs text-gray-400">Official Website</p>
@@ -287,7 +305,7 @@ footer a:hover {
     <video autoplay muted loop playsinline class="w-full h-full object-cover opacity-25">
       <source src="https://cdn.pixabay.com/video/2023/02/09/150293-796233301_large.mp4" type="video/mp4">
     </video>
-    <div class="absolute inset-0 bg-gradient-to-b from-[#1a0000]/85 via-[#0a0000]/60 to-[#050000]/80"></div>
+    <div class="absolute inset-0 bg-gradient-to-b from-[#340042]/85 via-[#0a0000]/60 to-[#050000]/80"></div>
   </div>
   <div class="relative z-10 text-center max-w-3xl px-6 fade-in">
     <h2 class="text-5xl md:text-6xl font-heading font-extrabold glow-text mb-4">
@@ -362,26 +380,26 @@ footer a:hover {
   </div>
 </section>
 
-<!-- STORE -->
+<!-- STORE - RANKS -->
 <section id="store" class="py-16 bg-black/40">
   <div class="max-w-6xl mx-auto px-6">
     <div class="text-center mb-8">
-      <h3 class="text-3xl font-heading font-bold glow-text">Store</h3>
-      <p class="text-gray-400">Pilih rank yang kamu mau.</p>
+      <h3 class="text-3xl font-heading font-bold glow-text">Rank Store</h3>
+      <p class="text-gray-400">Pilih rank premium untuk fitur eksklusif.</p>
     </div>
-    <div id="store-grid" class="grid sm:grid-cols-2 md:grid-cols-3 gap-6"></div>
+    <div id="store-grid" class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6"></div>
   </div>
 </section>
 
-<!-- BALANCE SHOP SECTION -->
-<section id="balanceshop" class="py-16 bg-black/40">
-<div class="max-w-6xl mx-auto px-6">
-<div class="text-center mb-8">
-<h3 class="text-3xl font-heading font-bold glow-text">Balance Shop</h3>
-<p class="text-gray-400">Beli uang in‑game dengan aman & cepat.</p>
-</div>
-<div id="balance-grid" class="grid sm:grid-cols-2 md:grid-cols-3 gap-6"></div>
-</div>
+<!-- COIN SHOP SECTION -->
+<section id="coinshop" class="py-16 bg-gradient-to-b from-black/40 to-black/60">
+  <div class="max-w-6xl mx-auto px-6">
+    <div class="text-center mb-8">
+      <h3 class="text-3xl font-heading font-bold glow-text">Coin Shop</h3>
+      <p class="text-gray-400">Beli Coin ntuk digunakan di server.</p>
+    </div>
+    <div id="coin-grid" class="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6"></div>
+  </div>
 </section>  
 
 <!-- CONNECT -->
@@ -449,11 +467,11 @@ footer a:hover {
 <script>
 // Contoh CONFIG supaya script jalan
 window.CONFIG = {
-  logo: "https://i.imgur.com/qPAKQOC.jpeg",
+  logo: "https://i.imgur.com/cxDINLy.jpeg",
   serverIP: "minehave.my.id",
-  port: "25695",
+  port: "25531",
   version: "1.21.1",
-  gallery: ["https://i.imgur.com/qhow8aB.jpeg","https://i.imgur.com/O20zUjv.jpeg","https://i.imgur.com/O4oMNNP.jpeg"],
+  gallery: ["https://i.imgur.com/fvbp5jz.jpeg","https://i.imgur.com/aiJ1h0K.jpeg","https://i.imgur.com/zcblqiI.jpeg"],
   staff: [
     {name:"Brian",role:"Owner",img:"https://i.imgur.com/6rC0eGe.png"},
     {name:"Reza",role:"Developer",img:"https://i.imgur.com/uAHqqZ6.png"},
@@ -503,83 +521,147 @@ document.getElementById('copy-ip').onclick=async()=>{
   }catch(e){ alert('Failed to copy'); }
 };
 
-// STORE
+// RANK STORE - Updated dengan data dari config
 const storeItems = [
-{
-  id:'elite', title:'ɢᴀᴍᴍᴀ', price:'Rp 15.000',
-  commands:['/ᴘᴛɪᴍᴇ','/ᴘᴡᴇᴀᴛʜᴇʀ','/ꜱᴜɪᴄɪᴅᴇ','/ᴄʀᴀꜰᴛ','/ᴋɪᴛ','/ᴇᴄ','/ɴɪᴄᴋ'],
-  features:['ꜱᴇᴛʜᴏᴍᴇ 5']
-},
-{
-  id:'master', title:'ᴀʟᴘʜᴀ', price:'Rp 25.000',
-  commands:['/ꜰʟʏ','/ᴘᴛɪᴍᴇ','/ᴘᴡᴇᴀᴛʜᴇʀ','/ꜱᴜɪᴄɪᴅᴇ','/ᴄʀᴀꜰᴛ','/ᴋɪᴛ','/ᴇᴄ','/ɴɪᴄᴋ','/ᴀɴᴠɪʟ','/ꜱᴍɪᴛʜɪɴɢᴛᴀʙʟᴇ','/ʜᴇᴀʟ','/ꜰᴇᴇᴅ','/ʜᴀᴛ'],
-  features:['ꜱᴇᴛʜᴏᴍᴇ 7']
-},
-{
-  id:'epic', title:'ᴅᴇᴍᴏɴ', price:'Rp 40.000',
-  commands:['/ꜰʟʏ','/ᴘᴛɪᴍᴇ','/ᴘᴡᴇᴀᴛʜᴇʀ','/ꜱᴜɪᴄɪᴅᴇ','/ᴄʀᴀꜰᴛ','/ᴋɪᴛ','/ᴇᴄ','/ɴɪᴄᴋ','/ᴀɴᴠɪʟ','/ꜱᴍɪᴛʜɪɴɢᴛᴀʙʟᴇ','/ʜᴇᴀʟ','/ꜰᴇᴇᴅ','/ʜᴀᴛ','/ɪɴᴀᴍᴇ','/ʀᴇᴘᴀɪʀ','/ɢʀɪɴᴅꜱᴛᴏɴᴇ','/ʟᴏᴏᴍ','/ꜱᴛᴏɴᴇᴄᴜᴛᴛᴇʀ'],
-  features:['ꜱᴇᴛʜᴏᴍᴇ 15']
-},
-{
-  id:'legend', title:'ʜʏʙʀɪᴅ', price:'Rp 80.000',
-  commands:['/ꜰʟʏ','/ᴘᴛɪᴍᴇ','/ᴘᴡᴇᴀᴛʜᴇʀ','/ꜱᴜɪᴄɪᴅᴇ','/ᴄʀᴀꜰᴛ','/ᴋɪᴛ','/ᴇᴄ','/ɴɪᴄᴋ','/ᴀɴᴠɪʟ','/ꜱᴍɪᴛʜɪɴɢᴛᴀʙʟᴇ','/ʜᴇᴀʟ','/ꜰᴇᴇᴅ','/ʜᴀᴛ','/ɪɴᴀᴍᴇ','/ʀᴇᴘᴀɪʀ','/ɢʀɪɴᴅꜱᴛᴏɴᴇ','/ʟᴏᴏᴍ','/ꜱᴛᴏɴᴇᴄᴜᴛᴛᴇʀ','/ᴛᴘ'],
-  features:['ꜱᴇᴛʜᴏᴍᴇ 25']
-},
-{
-  id:'monolit', title:'ѕᴜᴘʀᴇᴍᴇ', price:'Rp 100.000',
-  commands:['/ꜰʟʏ','/ᴘᴛɪᴍᴇ','/ᴘᴡᴇᴀᴛʜᴇʀ','/ꜱᴜɪᴄɪᴅᴇ','/ᴄʀᴀꜰᴛ','/ᴋɪᴛ','/ᴇᴄ','/ɴɪᴄᴋ','/ᴀɴᴠɪʟ','/ꜱᴍɪᴛʜɪɴɢᴛᴀʙʟᴇ','/ʜᴇᴀʟ','/ꜰᴇᴇᴅ','/ʜᴀᴛ','/ɪɴᴀᴍᴇ','/ʀᴇᴘᴀɪʀ','/ɢʀɪɴᴅꜱᴛᴏɴᴇ','/ʟᴏᴏᴍ','/ꜱᴛᴏɴᴇᴄᴜᴛᴛᴇʀ','/ɪɴᴠꜱᴇᴇ','/ꜱᴜᴅᴏ','/ᴛᴘ'],
-  features:['ꜱᴇᴛʜᴏᴍᴇ 40','ᴄᴜѕᴛᴏᴍ ᴘʀᴇꜰɪх +ʀᴘ10.000']
-},
+  {
+    id: 'vip',
+    title: '「ᴠɪᴘ」',
+    price: 'Rp 25.000',
+    color: 'text-green-400',
+    borderColor: 'border-green-400/30',
+    permissions: ['3x Limit Claim', '5000 Limit Block', '5x Sethome'],
+    features: ['/clan create', '/repair', '/food', '/heal', '/kit vip', 'Money Rp25.000'],
+    bonus: 'Rank dasar dengan fitur essential'
+  },
+  {
+    id: 'mvp',
+    title: '「ᴍᴠᴘ」',
+    price: 'Rp 50.000',
+    color: 'text-blue-500',
+    borderColor: 'border-blue-500/30',
+    permissions: ['5x Limit Claim', '8000 Limit Block', '10x Sethome'],
+    features: ['/ec', '/feed', '/nick', '/kit mvp', 'Termasuk fitur VIP', 'Money Rp40.000'],
+    bonus: 'Upgrade dari VIP dengan Enderchest'
+  },
+  {
+    id: 'elite',
+    title: '「ᴇʟɪᴛᴇ」',
+    price: 'Rp 80.000',
+    color: 'text-orange-400',
+    borderColor: 'border-orange-400/30',
+    permissions: ['8x Limit Claim', '10.000 Limit Block', '15x Sethome'],
+    features: ['/ec', '/fly', '/nick', '/repair', '/feed', '/kit elite', 'Termasuk fitur MVP', 'Money Rp70.000'],
+    bonus: 'Fitur Fly untuk eksplorasi bebas'
+  },
+  {
+    id: 'legend',
+    title: '「ʟᴇɢᴇɴᴅ」',
+    price: 'Rp 125.000',
+    color: 'text-purple-400',
+    borderColor: 'border-purple-400/30',
+    permissions: ['10x Limit Claim', '20.000 Limit Block', '25x Sethome'],
+    features: ['/ec', '/fly', '/nick', '/repair', '/kit legend', 'Termasuk fitur Elite', 'Money Rp250.000'],
+    bonus: 'Bonus uang besar & claim luas'
+  },
+  {
+    id: 'sultan',
+    title: '「ѕᴜʟᴛᴀɴ」',
+    price: 'Rp 150.000',
+    color: 'text-yellow-400',
+    borderColor: 'border-yellow-400/30',
+    permissions: ['20x Limit Claim', '30.000 Limit Block', '50x Sethome'],
+    features: ['/ec', '/beezooka', '/feed', '/fly', '/nick', '/repair', '/heal', '/kit sultan', 'Termasuk fitur Legend', 'Money Rp350.000'],
+    bonus: 'Beezooka & Heal untuk PvP master'
+  },
+  {
+    id: 'supreme',
+    title: '「ѕᴜᴘʀᴇᴍᴇ」',
+    price: 'Rp 300.000',
+    color: 'text-red-500',
+    borderColor: 'border-red-500/30',
+    permissions: ['∞ Limit Claim', '∞ Limit Block', '999 Sethome'],
+    features: ['/ec', '/feed', '/fly', '/repair', '/nick', '/heal', '/craft', '/head', '/beezooka', '/kit supreme', 'Termasuk fitur Sultan', 'Money Rp700.000'],
+    bonus: 'UNLIMITED everything! Rank tertinggi'
+  }
 ];
 
 // render store
 const storeGrid = document.getElementById('store-grid');
 storeItems.forEach(item=>{
   const d=document.createElement('div');
-  d.className='p-6 rounded-xl glass';
+  d.className=`p-6 rounded-xl glass ${item.borderColor} border-2`;
   d.setAttribute('data-aos','zoom-in');
   d.innerHTML = `
-    <div class="flex items-center justify-between mb-3">
-      <div class="text-lg font-semibold">${item.title}</div>
-      <div class="text-sm text-monoAccentLight font-semibold">${item.price}</div>
+    <div class="flex items-center justify-between mb-4">
+      <div class="text-xl font-bold ${item.color}">${item.title}</div>
+      <div class="text-lg font-bold text-white bg-gradient-to-r from-orange-500 to-red-500 px-3 py-1 rounded-full">${item.price}</div>
     </div>
-    <details class="text-sm text-gray-300 mb-3">
-      <summary class="cursor-pointer text-white font-medium">ᴄᴏᴍᴍᴀɴᴅs & ꜰᴇᴀᴛᴜʀᴇs</summary>
-    <div class="text-sm text-gray-300 mb-3">${item.commands.map(f=>'• '+f).join('<br>')}</div>
-    <div class="text-sm text-gray-300 mb-3">${item.features.map(f=>'• '+f).join('<br>')}</div>
-    </details>
+    
+    <div class="space-y-3 mb-4">
+      <details class="group">
+        <summary class="cursor-pointer text-sm font-semibold text-gray-300 hover:text-white flex items-center justify-between">
+          <span>Permissions</span>
+          <span class="transform group-open:rotate-180 transition-transform">▼</span>
+        </summary>
+        <div class="mt-2 pl-2 space-y-1 text-sm text-gray-400">
+          ${item.permissions.map(p => `<div class="flex items-center gap-2"><span class="${item.color}">➥</span> ${p}</div>`).join('')}
+        </div>
+      </details>
+      
+      <details class="group">
+        <summary class="cursor-pointer text-sm font-semibold text-gray-300 hover:text-white flex items-center justify-between">
+          <span>Features</span>
+          <span class="transform group-open:rotate-180 transition-transform">▼</span>
+        </summary>
+        <div class="mt-2 pl-2 space-y-1 text-sm text-gray-400">
+          ${item.features.map(f => `<div class="flex items-center gap-2"><span class="${item.color}">➥</span> ${f}</div>`).join('')}
+        </div>
+      </details>
+    </div>
+    
     <div class="flex justify-center mt-4">
-      <a href="https://wa.me/6282344830780" target="_blank" class="mt-4 w-full px-4 py-2 rounded-full btn-fire text-black font-semibold btn-glow text-center">Buy</a>
+      <a href="https://wa.me/6282344830780?text=Saya%20ingin%20membeli%20rank%20${item.id}%20dengan%20harga%20${item.price}" target="_blank" class="w-full px-4 py-3 rounded-full btn-fire text-black font-bold btn-glow text-center uppercase tracking-wide">
+        Beli
+      </a>
     </div>
   `;
   storeGrid.appendChild(d);
 });
 
-  // BALANCE SHOP ITEMS
-const balanceItems = [
-{ amount: "$25k", price: "Rp 5.000" },
-{ amount: "$50k", price: "Rp 10.000" },
-{ amount: "$75k", price: "Rp 15.000" },
-{ amount: "$100k", price: "Rp 20.000" },
-{ amount: "$250k", price: "Rp 50.000" },
-{ amount: "$500k", price: "Rp 100.000" }
+// COIN SHOP ITEMS - Harga disesuaikan dengan ekonomi server
+const coinItems = [
+  { amount: "5 Coin", price: "Rp 2.000", bonus: "Bonus 1 Coin", icon: "💰" },
+  { amount: "10 Coin", price: "Rp 8.000", bonus: "Bonus 3 Coin", icon: "💰" },
+  { amount: "20 Coin", price: "Rp 15.000", bonus: "Bonus 5 Coin", icon: "💰" },
+  { amount: "50 Coin", price: "Rp 25.000", bonus: "Bonus 8 Coin", icon: "💰" },
 ];
-// RENDER BALANCE SHOP
-const balanceGrid = document.getElementById('balance-grid');
-balanceItems.forEach(item => {
-const d = document.createElement('div');
-d.className = 'p-6 rounded-xl glass';
-d.setAttribute('data-aos', 'zoom-in');
-d.innerHTML = `
-<div class="flex items-center justify-between mb-3">
-<div class="text-lg font-semibold">${item.amount}</div>
-<div class="text-sm text-monoAccentLight font-semibold">${item.price}</div>
-</div>
-<div class="flex justify-center mt-4">
-<a href="https://wa.me/6282344830780" target="_blank" class="mt-4 w-full px-4 py-2 rounded-full btn-fire text-black font-semibold btn-glow text-center">Buy</a>
-</div>
-`;
-balanceGrid.appendChild(d);
+
+// RENDER COIN SHOP
+const coinGrid = document.getElementById('coin-grid');
+coinItems.forEach((item, index) => {
+  const d = document.createElement('div');
+  d.className = 'p-6 rounded-xl coin-card glass relative overflow-hidden';
+  d.setAttribute('data-aos', 'zoom-in');
+  d.setAttribute('data-aos-delay', index * 50);
+  
+  const isPopular = index === 4 || index === 6; // Highlight middle tiers
+  
+  d.innerHTML = `
+    ${isPopular ? '<div class="absolute top-0 right-0 bg-gradient-to-l from-yellow-500 to-orange-500 text-black text-xs font-bold px-3 py-1 rounded-bl-lg">POPULAR</div>' : ''}
+    <div class="text-center">
+      <div class="text-4xl mb-2">${item.icon}</div>
+      <div class="text-2xl font-bold text-gradient-glow mb-1">${item.amount}</div>
+      <div class="text-lg font-semibold text-white mb-2">${item.price}</div>
+      <div class="text-xs text-yellow-400 mb-4">✦ ${item.bonus}</div>
+      <a href="https://wa.me/6282344830780?text=Saya%20ingin%20membeli%20${encodeURIComponent(item.amount)}%20MineCoin%20dengan%20harga%20${item.price}" 
+target="_blank" 
+class="block w-full px-4 py-2 rounded-full bg-gradient-to-r from-purple-700 to-purple-500 hover:from-purple-600 hover:to-purple-400 text-white font-semibold transition-all duration-300 hover:shadow-lg hover:shadow-purple-500/50">
+  Beli Coin
+
+      </a>
+    </div>
+  `;
+  coinGrid.appendChild(d);
 });
 
 // Minecraft-MP API fetch
